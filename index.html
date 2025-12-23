@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Xmas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #050103;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        @keyframes rainbow-glow {
+            0% { 
+                color: #FFD1DC; 
+                filter: drop-shadow(0 0 15px rgba(255, 209, 220, 0.7)) drop-shadow(0 0 30px rgba(255, 209, 220, 0.3));
+            }
+            25% { 
+                color: #FFD700; 
+                filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7)) drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
+            }
+            50% { 
+                color: #00F0FF; 
+                filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.7)) drop-shadow(0 0 30px rgba(0, 240, 255, 0.3));
+            }
+            75% { 
+                color: #BD00FF; 
+                filter: drop-shadow(0 0 15px rgba(189, 0, 255, 0.7)) drop-shadow(0 0 30px rgba(189, 0, 255, 0.3));
+            }
+            100% { 
+                color: #FFD1DC; 
+                filter: drop-shadow(0 0 15px rgba(255, 209, 220, 0.7)) drop-shadow(0 0 30px rgba(255, 209, 220, 0.3));
+            }
+        }
+        .rainbow-glow-text {
+            animation: rainbow-glow 8s ease-in-out infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
+    "three": "https://esm.sh/three@^0.182.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>

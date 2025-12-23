@@ -1,0 +1,7 @@
+{
+  "name": "Dreamy Xmas - Interactive Experience",
+  "description": "A high-performance 3D Christmas experience featuring hand-tracking interaction and particle systems.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
